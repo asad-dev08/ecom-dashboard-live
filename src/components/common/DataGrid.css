@@ -1,0 +1,51 @@
+/* Add this to your styles */
+.ant-table-cell-padding .ant-table-thead > tr > th,
+.ant-table-cell-padding .ant-table-tbody > tr > td {
+  padding: var(--cell-padding-middle);
+}
+
+.ant-table-small.ant-table-cell-padding .ant-table-thead > tr > th,
+.ant-table-small.ant-table-cell-padding .ant-table-tbody > tr > td {
+  padding: var(--cell-padding-small);
+}
+
+.ant-table-large.ant-table-cell-padding .ant-table-thead > tr > th,
+.ant-table-large.ant-table-cell-padding .ant-table-tbody > tr > td {
+  padding: var(--cell-padding-large);
+}
+
+/* Pagination styles */
+.ant-pagination {
+  padding: 16px 24px;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 0 !important;
+}
+
+/* Size selector dropdown styles */
+.size-selector-dropdown {
+  min-width: 140px !important;
+}
+
+.size-selector-dropdown .ant-select-item {
+  padding: 8px 12px !important;
+}
+
+.size-selector-dropdown .ant-select-item-option-selected {
+  background-color: #e6f4ff !important;
+}
+
+.size-selector-dropdown .ant-select-item-option-active {
+  background-color: #f5f5f5;
+}
+
+.ant-select-selection-item .anticon {
+  margin-right: 8px;
+}
+
+/* Remove old radio button styles */
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled),
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+.ant-radio-group-solid .ant-radio-button-wrapper:hover {
+  /* Remove these styles */
+} 

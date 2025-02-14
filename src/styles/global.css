@@ -1,0 +1,141 @@
+/* Base font sizes for different elements */
+html {
+  font-size: 16px; /* This will be modified by the fontScale */
+}
+
+/* Use rem units for all text elements */
+body {
+  font-size: 1rem;
+}
+
+/* Ant Design overrides */
+.ant-btn {
+  font-size: 1rem;
+}
+
+.ant-menu-item {
+  font-size: 1rem;
+}
+
+.ant-table {
+  font-size: 1rem;
+}
+
+.ant-card {
+  font-size: 1rem;
+}
+
+.ant-typography {
+  font-size: 1rem;
+}
+
+/* Headers */
+h1, .ant-typography h1 {
+  font-size: 2.5rem;
+}
+
+h2, .ant-typography h2 {
+  font-size: 2rem;
+}
+
+h3, .ant-typography h3 {
+  font-size: 1.75rem;
+}
+
+h4, .ant-typography h4 {
+  font-size: 1.5rem;
+}
+
+/* Form elements */
+.ant-form-item-label > label {
+  font-size: 1rem;
+}
+
+.ant-input {
+  font-size: 1rem;
+}
+
+.ant-select-selection-item {
+  font-size: 1rem;
+}
+
+/* Table */
+.ant-table {
+  font-size: 1rem;
+}
+
+/* Menu */
+.ant-menu-item {
+  font-size: 1rem;
+}
+
+/* Statistic */
+.ant-statistic-title {
+  font-size: 1rem;
+}
+
+.ant-statistic-content {
+  font-size: 1.5rem !important;
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark .ant-layout {
+  background-color: #141414;
+}
+
+.dark .ant-layout-sider {
+  background-color: #1f1f1f;
+  border-right-color: #303030;
+}
+
+.dark .ant-layout-header {
+  background-color: #1f1f1f;
+  border-bottom-color: #303030;
+}
+
+.dark .ant-card {
+  background-color: #1f1f1f;
+  border-color: #303030;
+}
+
+.dark .ant-drawer-content {
+  background-color: #1f1f1f;
+}
+
+.dark .ant-drawer-header {
+  background-color: #1f1f1f;
+  border-bottom-color: #303030;
+}
+
+.dark .ant-drawer-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark .ant-divider {
+  border-color: #303030;
+}
+
+.dark .ant-btn-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark .ant-btn-text:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .ant-menu {
+  background-color: transparent;
+}
+
+.dark .ant-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .ant-menu-item-selected {
+  background-color: #1890ff !important;
+} 
