@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "generate-mock-data": "node src/mockData/generateDb.js",
-    "preinstall": "json-server --watch db.json --port 3001"
+    "prepublish": "json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [
