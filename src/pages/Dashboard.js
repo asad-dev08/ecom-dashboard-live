@@ -180,7 +180,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="p-6">
       <Title level={2}>Dashboard</Title>
 
       {/* Stats Cards */}
