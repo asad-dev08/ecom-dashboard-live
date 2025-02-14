@@ -1,5 +1,5 @@
-export const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? '/api'  // This will use Vercel's API routes
+export const API_BASE_URL = process.env.NODE_ENV === 'production'
+  ? 'https://ecom-dashboard-db.onrender.com'  // Replace with your Render URL
   : 'http://localhost:3001';
 
 export const api = {
