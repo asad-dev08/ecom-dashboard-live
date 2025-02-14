@@ -5,18 +5,23 @@ export const API_BASE_URL = process.env.NODE_ENV === 'production'
 export const api = {
   // Auth
   login: async (email, password) => {
-    const response = await fetch(`${API_BASE_URL}/users?email=${email}`);
-    console.log('response:', response);
-    const users = await response.json();
-    console.log('users:', users);
-    const user = users[0];
-    
-    // In a real app, password comparison would happen on the server
-    // For demo purposes, we'll check if the password is "admin123" since that's our known password
-    if (user && password === "admin123" && user.role === 'admin') {
-      return user;
+    try {
+      const response = await fetch(`${API_BASE_URL}/users?email=${email}`);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const users = await response.json();
+      console.log('Login response:', users);
+      const user = users[0];
+      
+      if (user && password === "admin123" && user.role === 'admin') {
+        return user;
+      }
+      throw new Error('Invalid credentials');
+    } catch (error) {
+      console.error('Login error:', error);
+      throw error;
     }
-    throw new Error('Invalid credentials');
   },
 
   register: async (userData) => {
