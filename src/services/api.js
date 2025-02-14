@@ -1,5 +1,5 @@
 export const API_BASE_URLL = 'http://localhost:3001';
-export const API_BASE_URL = 'https://ecom-dashboard-live.vercel.app/';
+export const API_BASE_URL = 'https://ecom-dashboard-live.vercel.app:3001/';
 
 export const api = {
   // Auth
